@@ -1,0 +1,116 @@
+html{
+  background-color: #ddffff;
+}
+body {
+  width: 90%;
+  max-width: 1024px;
+  margin:2em auto !important;
+  border: 2px solid black;
+  border-radius: 2em;
+  background-color: #ffffff;
+}
+
+header{text-align: center;}
+header img {
+  width: 100px;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+header h1{
+  font-style: italic;
+  font-family: times;
+}
+header h3{
+  padding-left: 2em;
+  font-style: italic;
+  font-family: times;
+}
+header audio{
+  width:30%;
+}
+#nav_menu ul {
+  clear:both;
+  padding-left: 0;
+  list-style: none;
+  position: relative;
+}
+#nav_menu ul li {
+  float: left;
+  width: 25%;
+}
+#nav_menu ul li a {
+  font-style: italic;
+  font-family: times;
+  text-align: center;
+  display: block;
+  padding: 1em 0;
+  font-size: 95%;
+  text-decoration: none;
+  background-color: #ccffcc;
+  color: black;
+  font-weight: bold;
+  border-right: 0.1em solid white;
+  border-left: 0.1em solid white;
+}
+#nav_menu ul ul {
+  display: none;
+  width:25%;
+  position: absolute;
+  z-index: 1;
+}
+#nav_menu ul ul li {
+  float:none;
+  width:100%;
+  margin-top: 0.1em;
+}
+#nav_menu ul li:hover > ul{display:block;}
+#nav_menu > ul::after {
+  content: "";
+  display: block;
+  clear:both;
+}
+#nav_menu ul li a.lastitem {border-right: none;}
+
+footer {
+  clear: both;
+  border-top: 2px solid #000;
+  text-align: center;
+}
+
+main{
+  margin: 1em auto;
+  padding-bottom: 2em;
+  width: 50%;
+  min-width: 300px;
+}
+main p{
+  font-size: 3em;
+  font-weight: bold;
+}
+main input{
+  float:right;
+}
+main div{margin-top: 4em;}
+@media only screen and (min-width:200px){
+  #nav_menu ul li{
+    border-top:2px solid white;
+    width: 50%;
+  }
+  header img{padding-top:2em;}
+}
+@media only screen and (min-width:767px) {
+  #nav_menu ul li{width: 25%;}
+  header{text-align: left;}
+  header img {
+    padding-top: 0;
+    float:left;
+  }
+  header h3 {
+    width:50%;
+    float:left;}
+  header audio{float: right;}
+}
+
+.accordion > div {
+  display: none;
+}

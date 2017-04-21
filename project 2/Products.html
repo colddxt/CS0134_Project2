@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Small Book Store</title>
+  <meta charset=="utf-8">
+  <meta name="description" content="A web for selling second hand book">
+  <meta name="keywords" content="textbook, Harry Potter">
+  <link rel="shortcut icon" href="image/icon.jpg">
+  <link rel="styleSheet" href="style/Product.css">
+</head>
+
+<body>
+  <header id="header">
+    <img src="./image/icon.jpg" alt="Small book store icon">
+    <h1>Xingtian's Small Book Store</h1>
+    <h3>You can always find a book you need</h3>
+    <audio id="audioplayer" controls>
+      <source src="audio/tavern.ogg" type="audio/ogg">
+
+      <object type="application/x-shockwave-flash" width="50" height="50">
+        <param name="movie" value="media/sjv_welcome.swf">
+        <param name="wmode" value="transparent">
+        <param name="quality" value="high">
+        <!--[if !IE]>-->
+          <object type="application/x-shockwave-flash"
+              data="media/sjv_welcome.swf" width="50" height="50">
+            <param name="wmode" value="transparent">
+            <param name="quality" value="high">
+          </object>
+        <!--[endif]-->
+      </object>
+    </audio>
+  </header>
+
+  <nav id="nav_menu">
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./Products.html">Products</a>
+        <ul>
+          <li><a href="./Products.html#Harry">Harry Potter Series</a></li>
+          <li><a href="./Products.html#English">English Textbook</a></li>
+          <li><a href="./Products.html#Chinese">Chinese Textbook</a></li>
+        </ul>
+      </li>
+      <li><a href="./Cart.html">Cart</a></li>
+      <li class="lastitem"><a href="./AboutMe.html">About me</a></li>
+    </ul>
+  </nav>
+
+  <h2>Buy! Buy! Buy!</h2>
+
+  <aside>
+    <p><a href="#Harry">Harry Potter Series</a></p>
+    <ul>
+      <li><a href="#Harry2">Chamber of Secrets</a></li>
+      <li><a href="#Harry3">Prisoner of Azkaban</a></li>
+      <li><a href="#Harry4">Goblet of Fire</a></li>
+      <li><a href="#Harry5">Oder of the Phoenix</a></li>
+      <li><a href="#Harry7">Deathly Hallows</a></li>
+    </ul>
+    <p><a href="#English">English Textbook</a></p>
+    <ul>
+      <li><a href="#English1">Starting out with Java</a></li>
+      <li><a href="#English2">Murach's HTML5 and CSS3</a></li>
+      <li><a href="#English3">HTML &amp; CSS</a></li>
+      <li><a href="#English4">Data structures &amp; algorithms in Java</a></li>
+    </ul>
+    <p><a href="#Chinese">Chinese Textbook</a></p>
+    <ul>
+      <li><a href="#Chinese1">Nonliear control</a></li>
+      <li><a href="#Chinese2">Data structure and algorithms analysis in Java</a></li>
+      <li><a href="#Chinese3">Refactoring improving the design of existing code</a></li>
+      <li><a href="#Chinese4">Java basic introduction</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <form name="order" action="" method="post">
+    <fieldset>
+      <legend id="Harry">Harry Potter Series</legend>
+      <div id="Harry2">
+        <input type="checkbox" name="Harry2" value="Chamber of Secrets">
+          <label for="Harry2">
+            <table>
+              <tr>
+                <td rowspan="4" id="fig"><img src="./image/h2.jpg" alt="Chamber of Secrets"></th>
+                <th>Name</th>
+                <td>Chamber of Secrets</td>
+              </tr>
+              <tr>
+                <th>Auther</th>
+                <td>J. K. Rowling</td>
+              </tr>
+              <tr>
+                <th>Publish Year</th>
+                <td>2002</td>
+              </tr>
+              <tr>
+                <th>Price</th>
+                <td>$4.00</td>
+              </tr>
+            </table>
+          </label><br>
+        </div>
+        <div id="Harry3">
+        <input type="checkbox" name="Harry3" value="Prisoner of Azkaban">
+        <label for="Harry3">
+          <table>
+            <tr>
+              <td rowspan="4" id="fig"><img src="./image/h3.jpg" alt="Prisoner of Azkaban"></th>
+              <th>Name</th>
+              <td>Prisoner of Azkaban</td>
+            </tr>
+            <tr>
+              <th>Auther</th>
+              <td>J. K. Rowling</td>
+            </tr>
+            <tr>
+              <th>Publish Year</th>
+              <td>2003</td>
+            </tr>
+            <tr>
+              <th>Price</th>
+              <td>$4.00</td>
+            </tr>
+          </table>
+        </label><br>
+        </div>
+        <div id="Harry4">
+        <input type="checkbox" name="Harry4" value="Goblet of Fire">
+        <label for="Harry4">
+          <table>
+            <tr>
+              <td rowspan="4" id="fig"><img src="./image/h4.jpg" alt="Goblet of Fire"></th>
+              <th>Name</th>
+              <td>Goblet of Fire</td>
+            </tr>
+            <tr>
+              <th>Auther</th>
+              <td>J. K. Rowling</td>
+            </tr>
+            <tr>
+              <th>Publish Year</th>
+              <td>2005</td>
+            </tr>
+            <tr>
+              <th>Price</th>
+              <td>$4.00</td>
+            </tr>
+          </table>
+        </label><br>
+        </div>
+        <div id="Harry5">
+        <input type="checkbox" name="Harry5" value="Oder of the Phoenix">
+        <label for="Harry5">
+          <table>
+            <tr>
+              <td rowspan="4" id="fig"><img src="./image/h5.jpg" alt="Oder of the Phoenix"></th>
+              <th>Name</th>
+              <td>Oder of the Phoenix</td>
+            </tr>
+            <tr>
+              <th>Auther</th>
+              <td>J. K. Rowling</td>
+            </tr>
+            <tr>
+              <th>Publish Year</th>
+              <td>2007</td>
+            </tr>
+            <tr>
+              <th>Price</th>
+              <td>$4.00</td>
+            </tr>
+          </table>
+        </label><br>
+        </div>
+        <div id="Harry7">
+        <input type="checkbox" name="Harry7" value="Deathly Hallows">
+        <label for="Harry7">
+          <table>
+            <tr>
+              <td rowspan="4" id="fig"><img src="./image/h7.jpg" alt="Deathly Hallows"></th>
+              <th>Name</th>
+              <td>Deathly Hallows</td>
+            </tr>
+            <tr>
+              <th>Auther</th>
+              <td>J. K. Rowling</td>
+            </tr>
+            <tr>
+              <th>Publish Year</th>
+              <td>2010</td>
+            </tr>
+            <tr>
+              <th>Price</th>
+              <td>$4.00</td>
+            </tr>
+          </table>
+      </label><br>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend id="English">English Textbook</legend>
+      <div id="English1">
+        <input type="checkbox" name="English1" value="Starting out with Java">
+        <label for="English1">
+          <table>
+            <tr>
+              <td rowspan="4" id="fig"><img src="./image/t4.jpg" alt="Starting out with Java"></th>
+              <th>Name</th>
+              <td>Starting out with Java</td>
+            </tr>
+            <tr>
+              <th>Auther</th>
+              <td>Tony Gaddis</td>
+            </tr>
+            <tr>
+              <th>Publish Year</th>
+              <td>2015</td>
+            </tr>
+            <tr>
+              <th>Price</th>
+              <td>$90.00</td>
+            </tr>
+          </table>
+        </label><br>
+      </div>
+      <div id="English2">
+        <input type="checkbox" name="English2" value="Murach's HTML5 and CSS3">
+        <label for="English2">
+          <table>
+            <tr>
+              <td rowspan="4" id="fig"><img src="./image/t5.jpg" alt="Murach's HTML5 and CSS3"></th>
+              <th>Name</th>
+              <td>Murach's HTML5 and CSS3</td>
+            </tr>
+            <tr>
+              <th>Auther</th>
+              <td> Anne Boehm</td>
+            </tr>
+            <tr>
+              <th>Publish Year</th>
+              <td>2015</td>
+            </tr>
+            <tr>
+              <th>Price</th>
+              <td>$30.00</td>
+            </tr>
+          </table>
+        </label><br>
+      </div>
+      <div id="English3">
+        <input type="checkbox" name="English3" value="HTML and CSS">
+        <label for="English3">
+          <table>
+            <tr>
+              <td rowspan="4" id="fig"><img src="./image/t3.jpg" alt="HTML and CSS"></th>
+              <th>Name</th>
+              <td>HTML and CSS</td>
+            </tr>
+            <tr>
+              <th>Auther</th>
+              <td>John Wiley</td>
+            </tr>
+            <tr>
+              <th>Publish Year</th>
+              <td>2011</td>
+            </tr>
+            <tr>
+              <th>Price</th>
+              <td>$10.00</td>
+            </tr>
+          </table>
+        </label><br>
+      </div>
+      <div id="English4">
+        <input type="checkbox" name="English4" value="Data structures &amp; algorithms in Java">
+        <label for="English4">
+          <table>
+            <tr>
+              <td rowspan="4" id="fig"><img src="./image/t2.jpg" alt="Data structures &amp; algorithms in Java"></th>
+              <th>Name</th>
+              <td>Data structures &amp; algorithms in Java</td>
+            </tr>
+            <tr>
+              <th>Auther</th>
+              <td>Michael T. Goodrich</td>
+            </tr>
+            <tr>
+              <th>Publish Year</th>
+              <td>2014</td>
+            </tr>
+            <tr>
+              <th>Price</th>
+              <td>$8.00</td>
+            </tr>
+          </table>
+        </label><br>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend id="Chinese">Chinese Textbook</legend>
+        <div id="Chinese1">
+          <input type="checkbox" name="Chinese1" value="Nonliear control">
+          <label for="Chinese1">
+            <table>
+              <tr>
+                <td rowspan="4" id="fig"><img src="./image/c2.jpg" alt="Nonliear control"></th>
+                <th>Name</th>
+                <td>Nonliear control</td>
+              </tr>
+              <tr>
+                <th>Auther</th>
+                <td>Hassan K. Khalil</td>
+              </tr>
+              <tr>
+                <th>Publish Year</th>
+                <td>2014</td>
+              </tr>
+              <tr>
+                <th>Price</th>
+                <td>$10.00</td>
+              </tr>
+            </table>
+          </label><br>
+        </div>
+        <div id="Chinese2">
+          <input type="checkbox" name="Chinese2" value="Data structure and algorithms analysis in Java">
+          <label for="Chinese2">
+            <table>
+              <tr>
+                <td rowspan="4" id="fig"><img src="./image/c1.jpg" alt="Data structure and algorithms analysis in Java"></th>
+                <th>Name</th>
+                <td>Data structure and algorithms analysis in Java</td>
+              </tr>
+              <tr>
+                <th>Auther</th>
+                <td>Mark A. Weiss</td>
+              </tr>
+              <tr>
+                <th>Publish Year</th>
+                <td>2011</td>
+              </tr>
+              <tr>
+                <th>Price</th>
+                <td>$10.00</td>
+              </tr>
+            </table>
+          </label><br>
+        </div>
+        <div id="Chinese3">
+          <input type="checkbox" name="Chinese3" value="Refactoring improving the design of existing code">
+          <label for="Chinese3">
+            <table>
+              <tr>
+                <td rowspan="4" id="fig"><img src="./image/c4.jpg" alt="Refactoring improving the design of existing code"></th>
+                <th>Name</th>
+                <td>Refactoring improving the design of existing code</td>
+              </tr>
+              <tr>
+                <th>Auther</th>
+                <td>Martin Fowler</td>
+              </tr>
+              <tr>
+                <th>Publish Year</th>
+                <td>1999</td>
+              </tr>
+              <tr>
+                <th>Price</th>
+                <td>$10.00</td>
+              </tr>
+            </table>
+          </label><br>
+        </div>
+        <div id="Chinese4">
+          <input type="checkbox" name="Chinese4" value="Java basic introduction">
+          <label for="Chinese4">
+            <table>
+              <tr>
+                <td rowspan="4" id="fig"><img src="./image/c3.jpg" alt="Java basic introduction"></th>
+                <th>Name</th>
+                <td>Java basic introduction</td>
+              </tr>
+              <tr>
+                <th>Auther</th>
+                <td>Chuanzhi</td>
+              </tr>
+              <tr>
+                <th>Publish Year</th>
+                <td>2014</td>
+              </tr>
+              <tr>
+                <th>Price</th>
+                <td>$3.00</td>
+              </tr>
+            </table>
+          </label><br>
+          </div>
+        </fieldset>
+        <label>&nbsp;</lable>
+        <input type="image" id="submit" src="image/shoppingcart.jpg">
+        <figcaption>Add to cart :</figcaption>
+    </form>
+  </main>
+</body>
+
+<footer>
+  <p>&copy; Copyright 2017 Xingtian Dong </p>
+  <a href="#header">Back to top</a>
+</footer>
+</html>

@@ -1,0 +1,199 @@
+html{
+  background-color: #ddffff;
+}
+body {
+  width: 90%;
+  max-width: 1024px;
+  margin:2em auto !important;
+  border: 2px solid black;
+  border-radius: 2em;
+  background-color: #ffffff;
+}
+
+header{text-align: center;}
+header img {
+  width: 100px;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+header h1{
+  font-style: italic;
+  font-family: times;
+}
+header h3{
+  padding-left: 2em;
+  font-style: italic;
+  font-family: times;
+}
+header audio{
+  width:30%;
+}
+
+h2{
+  animation: moveright 3s 2s infinite ease-in-out alternate;
+  -webkit-prefix: moveright 3s 2s infinite ease-in-out alternate;
+}
+@keyframes moveright {
+  from {
+    margin-left: 20%;
+    color: blue;
+  }
+  to {
+    margin-left: 60%;
+    color: red;
+  }
+}
+
+#nav_menu ul {
+  clear:both;
+  padding-left: 0;
+  list-style: none;
+  position: relative;
+}
+#nav_menu ul li {
+  float: left;
+  width: 25%;
+}
+#nav_menu ul li a {
+  font-style: italic;
+  font-family: times;
+  text-align: center;
+  display: block;
+  padding: 1em 0;
+  font-size: 95%;
+  text-decoration: none;
+  background-color: #ccffcc;
+  color: black;
+  font-weight: bold;
+  border-right: 0.1em solid white;
+  border-left: 0.1em solid white;
+}
+#nav_menu ul ul {
+  display: none;
+  width:25%;
+  position: absolute;
+  z-index: 1;
+}
+#nav_menu ul ul li {
+  float:none;
+  width:100%;
+  margin-top: 0.1em;
+}
+#nav_menu ul li:hover > ul{display:block;}
+#nav_menu > ul::after {
+  content: "";
+  display: block;
+  clear:both;
+}
+#nav_menu ul li a.lastitem {border-right: none;}
+
+footer {
+  clear: both;
+  border-top: 2px solid #000;
+  text-align: center;
+}
+footer a{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  position: fixed;
+  font-family: times;
+  bottom: 2em;
+  padding: 1em 3em;
+  background-color: #ccffcc;
+  border: 2px solid black;
+  border-radius: 1.5em;
+  right: 3em;
+}
+
+body aside {
+  position:fixed;
+  text-decoration: none;
+  float:left;
+  width:20%;
+  font-family: times;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 0 1em 1em 2em;
+}
+body aside p a {
+  color: black;
+  text-decoration: none;
+}
+body aside ul li a{
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  float: right;
+  width: 74%;
+}
+main table{
+  width:90%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+main table tr{
+  height:3em;
+}
+main table th, td{
+  width:30%;
+  border: 1px solid black;
+  padding: .2em .7em;
+  text-align: left;
+  text-decoration: none;
+}
+main table img{
+  width:30%;
+  min-width: 120px;
+}
+main fieldset div > input{
+  float: left;
+  margin-top: 12%;
+  padding-top: 15em;
+}
+
+#fig{
+  text-align: center;
+}
+#submit{
+  float:right;
+  text-align: right;
+  width:4em;
+  background-color: silver;
+  font-size: 2em;
+  border-radius: 1em;
+  margin: 1em 1em;
+}
+main figcaption{
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 1em;
+  float: right;
+}
+
+@media only screen and (min-width:200px){
+  body > aside{display: none;}
+  body>main{width: 100%;}
+  #nav_menu ul li{
+    border-top:2px solid white;
+    width: 50%;
+  }
+  header img{padding-top:2em;}
+}
+@media only screen and (min-width:767px) {
+  body > aside{display: block;}
+  body > main{width: 60%;}
+  #nav_menu ul li{width: 25%;}
+  header{text-align: left;}
+  header img {
+    padding-top: 0;
+    float:left;
+  }
+  header h3 {
+    width:50%;
+    float:left;}
+  header audio{float: right;}
+}

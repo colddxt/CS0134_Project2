@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Small Book Store</title>
+  <meta charset=="utf-8">
+  <meta name="description" content="A web for selling second hand book">
+  <meta name="keywords" content="textbook, Harry Potter">
+  <link rel="shortcut icon" href="image/icon.jpg">
+  <link rel="styleSheet" href="style/Cart.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="./style/Cart.js"></script>
+</head>
+
+<body>
+  <header id="header">
+    <img src="./image/icon.jpg" alt="Small book store icon">
+    <h1>Xingtian's Small Book Store</h1>
+    <h3>You can always find a book you need</h3>
+    <audio id="audioplayer" controls>
+      <source src="audio/tavern.ogg" type="audio/ogg">
+
+      <object type="application/x-shockwave-flash" width="50" height="50">
+        <param name="movie" value="media/sjv_welcome.swf">
+        <param name="wmode" value="transparent">
+        <param name="quality" value="high">
+        <!--[if !IE]>-->
+          <object type="application/x-shockwave-flash"
+              data="media/sjv_welcome.swf" width="50" height="50">
+            <param name="wmode" value="transparent">
+            <param name="quality" value="high">
+          </object>
+        <!--[endif]-->
+      </object>
+    </audio>
+  </header>
+
+  <nav id="nav_menu">
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./Products.html">Products</a>
+        <ul>
+          <li><a href="./Products.html#Harry">Harry Potter Series</a></li>
+          <li><a href="./Products.html#English">English Textbook</a></li>
+          <li><a href="./Products.html#Chinese">Chinese Textbook</a></li>
+        </ul>
+      </li>
+      <li><a href="./Cart.html">Cart</a></li>
+      <li class="lastitem"><a href="./AboutMe.html">About me</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <p>Your cart is empty</p>
+    <input type="submit" name="submit" id="submit" value="Place the order">
+    <div>
+      <div class="accordion">
+    		<h3>Why I can not put the products into cart?</h3>
+    		<div>Sorry, I haven't learned PHP yet.</div>
+      </div>
+    </div>
+  </main>
+
+
+  <footer>
+    <p>&copy; Copyright 2017 Xingtian Dong </p>
+  </footer>
+</body>
+</html>
